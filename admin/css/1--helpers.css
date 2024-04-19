@@ -1,0 +1,28 @@
+.rounded-circle {
+    border-radius: 50%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.d-flex-center-y {
+    display: flex;
+    align-items: center;
+}
+
+.hover-scale-el .scale-el,
+.hover-scale {
+	-webkit-back1face-visibility: hidden;
+	backface-visibility: hidden;
+	transition-property: transform,filter, opacity;
+	transition-duration: 0.25s;
+	transition-timing-function: cubic-bezier(0.57, 0.21, 0.69, 1);
+}
+
+.hover-scale:focus,
+.hover-scale:hover,
+.hover-scale-el:focus .scale-el,
+.hover-scale-el:hover .scale-el {
+	transform: scale(1.044) translate(0, -0.25rem);
+}

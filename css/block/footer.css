@@ -1,0 +1,47 @@
+.footer {
+    margin-top: 180px;
+    padding: 55px 0 30px;
+    border-top: 1px solid #eee;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.footer .footer__nav {}
+
+.footer .navbar-nav {
+    margin: 42px 0 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@media (max-width: 576px) {
+    .footer .navbar-nav {
+        flex-direction: column;
+    }
+}
+
+.footer .nav-item {}
+
+.footer .nav-link {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.footer .footer__social {
+    margin: 42px 0 28px;
+}
+
+.footer .footer__copyright {
+    color: #999;
+    font-size: 12px;
+    padding-top: 20px;
+    margin: 0;
+}
+
+.footer .footer__developer {
+    display: block;
+    padding-top: 8px;
+}
+
+.footer .footer__developer a::before {
+    content: 'Супермен';
+}

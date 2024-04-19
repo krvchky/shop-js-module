@@ -1,0 +1,14 @@
+@media (max-width: 890px) {
+	.admin-form-edit.form-style .box-input {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.admin-form-edit.form-style .box-input .box-input__label {
+		width: 100%;
+		text-align: left;
+	}
+	.admin-form-edit.form-style .box-bottom {
+		padding-left: 0;
+	}
+
+}

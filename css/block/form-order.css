@@ -1,0 +1,64 @@
+/* Стилі форми замовлення */
+.form-order {
+
+}
+.form-order .form-control {
+	font-weight: 500;
+}
+
+
+
+/* Стилі сторінки з формою */
+.page-content-order {}
+.page-content-order .content-hold {
+	margin-bottom: 100px;
+}
+@media (max-width: 1080px) {
+	.page-content-order .content-hold {
+		gap: 70px;
+		flex-direction: column;
+		align-items: center;
+	}
+	.page-content-order .content-hold > div {
+		width: 100%;
+		max-width: 700px;
+	}
+	.page-content-order .content-cart {
+		order: -1;	
+	}
+}
+.page-content-order .title-cart-success {
+	--margin-lg-text: 0 0 4px;
+	--color: var(--color-green);
+	--icon-color: var(--color-green);
+	padding-top: 70px;
+}
+.page-content-order .title-cart-success .title-square__icon {
+	font-size: 90px;
+    margin-top: -72px;
+    margin-bottom: 12px;
+    stroke-width: 1.4px;
+}
+.page-content-order .title-cart-empty {
+	--margin-lg-text: 0 0 4px;
+	--color: var(--color-red);
+	--icon-color: var(--color-red);
+}
+.page-content-order .cart-added-list {
+	background-color: var(--color-wh);
+	border-radius: var(--bdrs-lg);
+	padding: 20px;
+	position: relative;
+	bottom: 0;
+	right: 0;
+}
+.page-content-order .cart-added-list .cart-added-list__item {
+	padding-left: 30px;
+}
+.page-content-order .cart-added-list .cart-added-list__item-btn-delete {
+	--bg-opacity: .08;
+	--hover-bg: var(--color-red-rgb);
+	--hover-bg-opacity: .18;
+	top: 22px;
+    left: 0;
+}

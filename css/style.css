@@ -1,0 +1,18 @@
+@import 'libs--normalize.css';  /* Загальні налаштування простих тегів */
+
+@import '0--main.css';        /* Загальні налаштування простих тегів */
+@import '1--helpers.css';     /* Стилі помічники оформлення загальної поведінки */
+@import '2--utils.css';       /* Різні елементи блоків */
+@import '2--btn.css';         /* Кнопки проекту */
+@import '2--typography.css';  /* Стилізуємо вивід з wysiwyg редактору тексту */
+
+@import 'block/card-product.css';     /* Карточка каталогу */
+@import 'block/navigation.css';       /* Навігація сайту */
+@import 'block/catalog.css';          /* Каталог товарів */
+@import 'block/hotOffers.css';        /* Гарячі пропозиції */
+@import 'block/gallery.css';          /* Галерея фотографій */
+@import 'block/cart-added-list.css';  /* Список доданих товарів */
+@import 'block/article.css';          /* Вигляд простої статті */
+@import 'block/footer.css';           /* Постійна нижня частина сайту */
+@import 'block/form-order.css';       /* Сторінка оформлення замовлення з формою і всіма статусми */
+@import 'block/form-auth.css';        /* Сторінка авторизайції і реєстрації */

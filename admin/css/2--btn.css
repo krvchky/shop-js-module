@@ -1,0 +1,43 @@
+.btn-filter-group {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 8px;
+	padding: 8px;
+	border-radius: var(--bdrs-sm);
+	background: var(--admin-gray);
+}
+.btn-filter-group .btn {
+	--bdrs: var(--bdrs-sm);
+	flex: 1 1 auto;
+	white-space: nowrap;
+}
+.btn-filter-group .btn:not(.active) {
+	--bg: transparent;
+	--color: #8D8F92;
+}
+
+.btn.btn-action {
+	--h: auto;
+	--bg-opacity: 0;
+	--color: var(--color-pr);
+	--padding: 4px 0;
+	--icon-opacity: 1;
+	--icon-top: 0;
+	--hover-bg-opacity: 0;
+	--hover-color: var(--color-pr);
+}
+.btn.btn-action .icon {
+	top: var(--icon-top);
+	opacity: var(--icon-opacity);
+}
+
+.btn-action.btn-edit {
+	--color: rgba(var(--color-green-rgb), .8);
+}
+.btn-action.btn-delete {
+    --color: rgba(var(--color-red-rgb), .6);
+    --icon-opacity: .75;
+    --icon-top: -1px;
+}

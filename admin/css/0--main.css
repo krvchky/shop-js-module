@@ -1,0 +1,27 @@
+:root {
+    --color-secondary: #6c757d;
+	--admin-gray: #F5F5F6;
+    --admin-gray-800: #343a40;
+    --admin-indent: 20px;
+    --sidebar-size: 270px;
+}
+
+.icon {
+    stroke-width: 3px;
+}
+.icon-filter {
+    stroke-width: 2.4px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.publish-show {
+    color: rgba(var(--color-green-rgb), .8);
+}
+.publish-hide {
+    color: rgba(var(--color-red-rgb), .6);
+}

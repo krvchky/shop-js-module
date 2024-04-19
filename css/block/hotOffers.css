@@ -1,0 +1,25 @@
+.hot-offers {}
+
+.hot-offers .hot-offers__title {
+    padding-top: 44px;
+}
+
+.hot-offers .hot-offers__title .title-square__icon {
+    font-size: 40px;
+    line-height: 1;
+    padding-bottom: 7px;
+    color: #ff0000;
+
+}
+
+.hot-offers .hot-offers__title::after {
+    display: none;
+}
+
+.hot-offers .hot-offers__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 80px;
+}

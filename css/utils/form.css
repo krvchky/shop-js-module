@@ -1,0 +1,227 @@
+/**
+ * Мітка обов'язкового поля
+ */
+.required-label {
+	position: relative
+}
+.required-label::before {
+	content: '*';
+	position: absolute;
+	top: -4px;
+	right: -13px;
+	color: var(--color-red);
+}
+
+
+
+
+
+
+/**
+ * Поле вибору картинки з прев'ю 
+ */
+.select-file {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 18px;
+}
+.select-file .select-file__input-file {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	opacity: 0;
+}
+.select-file .select-file__img-preview {
+	height: 100%;
+	max-width: 100px;
+	max-height: 56px;
+	border-radius: var(--bdrs);
+	order: -1;
+	border: 1px solid #e4e4e4;
+}
+.select-file .select-file__info,
+.select-file .select-file__btn {
+	flex: 1 1 auto;
+}
+.select-file .select-file__info {
+	font-size: 11px;
+    font-weight: 500;
+    color: #6c757d;
+	text-align: left;
+    padding: 2px 0 2px 13px;
+    border-left: 2px solid #e9ecef;
+}
+.select-file .select-file__btn {
+	--h: var(--input-h);
+	--icon-gap: 10px;
+	--padding: 0 30px;
+	white-space: nowrap;
+}
+.select-file .select-file__btn .icon {
+    animation: shakeUpDown .8s ease-in-out infinite alternate;
+}
+
+/* Анімація для іконки в кнопці */
+ @keyframes shakeUpDown {
+	0%  { transform: translateY(-2.5px) }
+	90% { transform: translateY(0) }
+}
+
+
+
+
+/**
+ * Основний вигляд поля форми
+ */
+.form-group {
+	margin-bottom: 8px;
+}
+.form-group.form-group--divider {
+	margin-top: 40px;
+}
+.form-group:last-child {
+	margin-bottom: 0;
+}
+.form-label {
+	font-size: 15px;
+	font-weight: 600;
+	display: flex;
+    -webkit-user-select: none;
+    user-select: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0.25rem;
+}
+.form-control {
+	--input-h: 56px;
+	--input-w: auto;
+	--input-fz: 16px;
+	--input-fw: 600;
+	--input-bg: var(--color-wh);
+    --input-color: var(--color-bl);
+    --input-bdrs: var(--bdrs-lg);
+    --input-bd-size: 1px;
+    --input-bd-color: #e4e4e4;
+    --input-focus-size: 4px;
+	display: block;
+	width: 100%;
+	max-width: var(--input-w);
+    height: var(--input-h);
+    color: var(--input-color);
+    background-color: var(--input-bg);
+	border: var(--input-bd-size) solid var(--input-bd-color);
+    font-size: var(--input-fz);
+    font-weight: var(--input-fw);
+    border-radius: var(--input-bdrs);
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	padding: 0 calc(var(--input-h) / 2.3);
+	line-height: initial;
+	outline: none;
+}
+.form-control:focus {
+    color: var(--input-color);
+    background-color: var(--input-bg);
+    border-color: var(--input-bg);
+    box-shadow: 0 0 0 var(--input-focus-size) rgba(var(--color-pr-rgb), 0.15);
+}
+.form-control::placeholder           { color: var(--color-placeholder); }
+.form-control:-ms-input-placeholder  { color: var(--color-placeholder); }
+.form-control::-ms-input-placeholder { color: var(--color-placeholder); }
+
+textarea.form-control {
+	padding-top: 16px;
+	padding-bottom: 16px;
+	min-height: 150px;
+}
+
+.form-control-round {
+	--input-bdrs: 50px;
+}
+
+.form-control-sm {
+	--input-h: 44px;
+	--input-fz: 14px;
+	--input-fw: 500;
+}
+
+.form-control--set-icon {
+	position: relative;
+}
+.form-control--set-icon .form-control--icon {
+	position: absolute;
+	top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+	margin-left: 5px;
+}
+.form-control--set-icon .form-control {
+	padding-left: 40px;
+}
+
+
+
+
+
+/**
+ * Default form style
+ */
+.form-style {
+	--label-size: 230px;
+	--input-h: 56px;
+	padding: var(--admin-indent) 0;
+}
+.form-style--center {
+	width: 100%;
+	max-width: 360px;
+	margin: 0 auto;
+}
+.form-style textarea {
+    width: 100% !important;
+}
+
+.form-style .box-input {
+	margin-bottom: 16px;
+}
+.form-style .box-input__label {
+	min-width: var(--label-size);
+	text-align: right;
+	padding: 14px 35px 14px 0;
+}
+.form-style .label-offset {
+	padding-left: var(--label-size);
+}
+.form-style .form-select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	cursor: pointer;
+	padding-right: 40px;
+	position: relative;
+	background-image: 
+		url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23444' stroke-width='2.6'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E"),
+		url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230B60E7' stroke-width='2.6'%3E%3Cpolyline points='18 15 12 9 6 15'%3E%3C/polyline%3E%3C/svg%3E");
+		background-position: calc(100% - 12px) 52%, calc(100% - 12px) 52%;
+	background-size: 17px, 0;
+	background-repeat: no-repeat;
+	transition: .2s;
+}
+.form-style .form-select:hover,
+.form-style .form-select:active,
+.form-style .form-select:focus,
+.form-style .form-select:focus-visible {
+	background-size: 0, 17px;
+}
+.form-style .box-bottom {
+	display: flex;
+	gap: 15px;
+	flex-wrap: wrap;
+	padding-top: 18px;
+}
+.form-style .box-bottom .btn {
+	--padding: 0 40px;
+}
+.form-style .form-action {
+	margin-top: 30px;
+}
+

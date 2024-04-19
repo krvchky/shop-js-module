@@ -1,0 +1,67 @@
+.form-auth {
+	max-width: 460px;
+	margin: 0 auto;
+}
+.form-auth .btn-forgot-password {
+	margin-top: 15px;
+}
+
+
+
+.page-content-auth {}
+.page-content-auth .title-square {
+	margin-bottom: 74px;
+}
+.page-content-auth .title-square .title-square__main {
+	width: 100%;
+	position: relative;
+	display: flex;
+	gap: 62px;
+	margin-top: 5px;
+}
+.page-content-auth .title-square .title-square__main::after {
+	content: '/';
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.page-content-auth .title-square .title-square__main .link-item {
+	width: 50%;
+	opacity: .8;
+}
+.page-content-auth .title-square .title-square__main .link-item a {
+	font-weight: 500;
+}
+.page-content-auth .title-square .title-square__main .link-item.active {
+	opacity: 1;
+}
+.page-content-auth .title-square .title-square__main .link-item-auth {
+	text-align: right;
+}
+.page-content-auth .title-square .title-square__main .link-item-reg {
+	text-align: left;
+}
+.page-password-forgot .page-content-auth .title-square .title-square__main::after {
+	display: none;
+}
+
+@media (max-width: 890px) {
+	.page-content-auth .title-square .title-square__main {
+		flex-direction: column;
+		gap: 20px;
+	}
+	.page-content-auth .title-square .title-square__main::after {
+		font-size: 20px;
+	}
+	.page-content-auth .title-square .title-square__main .link-item {
+		text-align: center;
+		width: 100%;
+	}
+	.page-content-auth .title-square .title-square__main .link-item .link-hover {
+		--line-bottom: 7px;
+	}
+	.page-profile-reg .page-content-auth .title-square .link-item-reg {
+		order: -1;
+	}
+}

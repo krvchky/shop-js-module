@@ -1,0 +1,62 @@
+.hidden {
+    display: none !important;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.container-fill {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.w-fill {
+    width: 100%;
+}
+
+.no-before::before,
+.no-after::after {
+    display: none !important;
+}
+
+.mt-none { margin-top: 0 !important; }
+
+.form-success {
+    color: var(--color-green);
+}
+
+.form-empty {
+    color: var(--color-red);
+}
+
+
+
+/* Стилі для адаптації */
+@media (min-width: 968px) {
+    .hide-pc {
+        display: none !important;
+    }
+}
+@media (max-width: 968px) {
+    .hide-mobile {
+        display: none !important;
+    }
+    .show,
+    .show-mobile {
+        display: flex !important;
+    }
+}

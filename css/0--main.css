@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --color-pr: #0B60E7;
+    --color-pr-rgb: 1, 96, 231;
+    --color-pr-hover: #3d55cc;
+    --color-pr-hover-rgb: 61, 85, 204;
+    --color-bl: #000;
+    --color-bl-rgb: 0, 0, 0;
+    --color-wh: #fff;
+    --color-wh-rgb: 255,255,255;
+    --color-placeholder: #adb5bd;
+    --color-red: #ef5b55;
+    --color-red-rgb: 239, 91, 85;
+    --color-green: #54a469;
+    --color-green-rgb: 84, 164, 105;
+
+    --nav-padding: 24px;
+    --nav-color: #3c3c43;
+    --nav-color-rgb: 60, 60, 67;
+    --block-padding: 32px;
+    --container-padding: 25px;
+    --bdrs: 10px;
+    --bdrs-xxs: 7px;
+    --bdrs-sm: 8px;
+    --bdrs-lg: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    background-color: #fafafa;
+    color: var(--color-bl);
+}
+
+a {
+    --color: var(--color-bl);
+    --bg: transparent;
+    --hover-color: var(--color-pr);
+    --hover-bg: transparent;
+    color: var(--color);
+    background-color: var(--bg);
+    text-decoration: none;
+    display: inline-flex;
+    transition: .25s;
+}
+
+a:hover {
+    color: var(--hover-color);
+    background-color: var(--hover-bg);
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: .83em 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+svg {
+    width: 1em;
+    height: 1em;
+    position: relative;
+    pointer-events: none;
+}
+
+.logo {
+    --color: #363837;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+    transform: scale(1)
+}
+
+.logo:hover {
+    transform: scale(1.1)
+}

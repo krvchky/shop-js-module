@@ -1,0 +1,9 @@
+@import 'utils/form.css'; /* Основний вигляд заголовку блока */
+@import 'utils/title-square.css'; /* Основний вигляд заголовку блока */
+@import 'utils/no-result.css'; /* Вигляд пустого результату */
+@import 'utils/dropdown.css'; /* Вигляд випливаючого блоку dropdown */
+@import 'utils/link-hover.css'; /* Покращуємо вигляд посилання */
+@import 'utils/hamburger.css'; /* Гамбургер для мобільного вигляду */
+@import 'utils/cart-added-summ.css'; /* Елемент підрахунку доданих товарів */
+@import 'utils/social.css'; /* Кнопки соціальних мереж */
+@import 'utils/content-grid.css'; /* Розділення блоків на колонки */
