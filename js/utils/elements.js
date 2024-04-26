@@ -6,5 +6,5 @@ export const searchInput = document.querySelector("#input-search");
 export const searchButton = document.querySelector("#btn-search");
 export const jsCartAddedList = document.querySelector("#js-cart-added-list");
 export const cartSumm = document.querySelectorAll(".js-cart-added-summ");
-export const deleteButtonHtml = document.querySelector("#cart-added-list");
+export const deleteButtonHtml = document.querySelector("#js-cart-added-list");
 console.log("deleteButtonHtml: ", deleteButtonHtml);

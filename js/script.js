@@ -46,9 +46,13 @@ catalogProductsHtml.onclick = (e) => {
 };
 
 // Вішаєм подію кліку на кнопку 'Видалити'
-if (deleteButtonHtml) {
-    deleteButtonHtml.onclick = (e) => {
-        // e.preventDefault();
-        console.log(e.target);
-    };
-}
+
+deleteButtonHtml.onclick = (e) => {
+    // console.log("click ");
+    e.preventDefault();
+    if (e.target.classList.contains("cart-added-list__item-btn-delete btn btn-light btn-xxs btn-icon")) {
+        console.log("Це кнопка для видалення товару");
+    } else {
+        console.log("Це не кнопка для видалення товару");
+    }
+};
