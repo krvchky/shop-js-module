@@ -9,4 +9,5 @@ export const apiUrl = {
     catalog: "https://6622700f27fcd16fa6c9d44f.mockapi.io/catalog",
     catalogByCatid: "https://6622700f27fcd16fa6c9d44f.mockapi.io/catalog?catid=",
     hotOffer: "https://6622700f27fcd16fa6c9d44f.mockapi.io/catalog?hotoffer=yes",
+    search: "https://6622700f27fcd16fa6c9d44f.mockapi.io/catalog?name=",
 };
