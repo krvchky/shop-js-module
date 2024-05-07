@@ -7,6 +7,11 @@ export function viewSomeCartItems(cart) {
     // Вивід в html
     cartSumm.forEach((element) => {
         element.innerHTML = cartLength;
-        element.classList.add("show-num");
+
+        if (cartLength == 0) {
+            element.classList.remove("show-num");
+        } else {
+            element.classList.add("show-num");
+        }
     });
 }

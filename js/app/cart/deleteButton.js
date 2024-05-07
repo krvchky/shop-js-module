@@ -1,5 +1,14 @@
-// import { deleteButtonHtlm } from "./deleteButtonHtlm.js";
-// deleteButtonHtlm.onclick = (e) => {
-//     e.preventDefault();
-//     console.log(e.target);
-// };
+import { viewCartSummOrder } from "../../utils/utils.js";
+import { cart } from "./cart.js";
+import { viewProducts } from "./viewProducts.js";
+
+export const deleteCartProduct = function (id) {
+    // Знайти товар в корзині по id
+    const keyProduct = cart.findIndex((item) => item.id == id);
+
+    // Видаляємо запис з масиву по індексу методом splice()
+    cart.splice(keyProduct, 1);
+
+    // Оновити корзину
+    viewProducts(cart);
+};
