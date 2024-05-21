@@ -133,133 +133,135 @@
 
         <div class="page-content page-content-order">
             <div class="container">
-                <h2 class="title-square title-square--icon">
-                    <a href="index.html" class="title-square__icon">
-                        <svg class="icon icon-cart-bag"><use href="#icon-cart-bag"></use></svg>
-                    </a>
-                    <span class="title-square__small"><a href="index.html" class="link-hover">Повернутися до каталогу</a></span>
-                    <span class="title-square__main">Форма замовлення</span>
-                </h2>
+                <div class="js-hold-form-order hidden">
+                    <h2 class="title-square title-square--icon">
+                        <a href="index.html" class="title-square__icon">
+                            <svg class="icon icon-cart-bag"><use href="#icon-cart-bag"></use></svg>
+                        </a>
+                        <span class="title-square__small"><a href="index.html" class="link-hover">Повернутися до каталогу</a></span>
+                        <span class="title-square__main">Форма замовлення</span>
+                    </h2>
 
-                <div class="content-grid content-hold">
-                    <div class="content-form">
-                        <!-- Щоб приховати добавити .hidden, щоб показати забрати клас .hidden -->
-                        <form class="form-style form-order" id="form-order">
-                            <div class="form-group">
-                                <h2 class="mt-none">Контакти:</h2>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label" for="name"><span class="required-label">Кому відправляти?</span></label>
-                                <input type="text" id="name" name="name" class="form-control" required placeholder="ПІБ" />
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label" for="email">Email:</label>
-                                <input type="email" id="email" name="email" class="form-control" placeholder="Для відправки даних про замовлення" />
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label" for="phone"><span class="required-label">Телефон:</span></label>
-                                <input type="tel" id="phone" name="phone" class="form-control" required placeholder="+38 (___) __ - __ - ___" />
-                            </div>
-
-                            <div class="form-group form-group--divider">
-                                <h2>Доставка:</h2>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label" for="town"><span class="required-label">Населений пункт:</span></label>
-                                <input type="text" id="town" name="town" class="form-control" required placeholder="В яке місто відправляємо замовлення?" />
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label" for="post-office"><span class="required-label">Відділеня нової пошти:</span></label>
-                                <input type="number" id="post-office" name="post-office" class="form-control" required placeholder="№" />
-                            </div>
-
-                            <div class="form-group form-group--divider">
-                                <h2>Оплата:</h2>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label" for="input-payment"><span class="required-label">Спосіб оплати:</span></label>
-                                <select name="payment" class="form-control form-select" id="input-payment" required>
-                                    <option value="">Вибрати спосіб оплати</option>
-                                    <option value="1">Оплайн оплата</option>
-                                    <option value="2">Наложений платіж</option>
-                                    <option value="3">Юридичним особам</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group form-action">
-                                <button type="submit" class="btn w-fill" disabled>Оформити замовлення</button>
-                            </div>
-                        </form>
-                    </div>
-
-                    <div class="content-cart">
-                        <div class="cart-added-list">
-                            <h2 class="cart-added-list__title">Корзина:</h2>
-
-                            <div class="cart-added-list__hold" id="js-cart-added-items">
-                                <div class="cart-added-list__item">
-                                    <button class="cart-added-list__item-btn-delete btn btn-light btn-xxs btn-icon">
-                                        <svg class="icon icon-close"><use href="#icon-close"></use></svg>
-                                    </button>
-                                    <img src="img/catalog/1.png" alt="" class="cart-added-list__item-img" />
-                                    <p class="cart-added-list__item-text-hold">
-                                        <a href="#" class="cart-added-list__item-title-link">Назва товару</a>
-                                        <span class="cart-added-list__item-meta-list">
-                                            <span class="cart-added-list__item-meta">Ціна: 6 999 грн</span>
-                                        </span>
-                                    </p>
-                                    <input type="text" class="cart-added-list__item-count" placeholder="0" value="1" />
-                                    <button class="cart-added-list__item-btn-plus btn btn-light btn-xxs btn-icon"></button>
-                                    <button class="cart-added-list__item-btn-minus btn btn-light btn-xxs btn-icon"></button>
+                    <div class="content-grid content-hold">
+                        <div class="content-form">
+                            <!-- Щоб приховати добавити .hidden, щоб показати забрати клас .hidden -->
+                            <form class="form-style form-order" id="form-order">
+                                <div class="form-group">
+                                    <h2 class="mt-none">Контакти:</h2>
                                 </div>
-                                <div class="cart-added-list__item">
-                                    <button class="cart-added-list__item-btn-delete btn btn-light btn-xxs btn-icon">
-                                        <svg class="icon icon-close"><use href="#icon-close"></use></svg>
-                                    </button>
-                                    <img src="img/catalog/1.png" alt="" class="cart-added-list__item-img" />
-                                    <p class="cart-added-list__item-text-hold">
-                                        <a href="#" class="cart-added-list__item-title-link">Назва товару</a>
-                                        <span class="cart-added-list__item-meta-list">
-                                            <span class="cart-added-list__item-meta">Ціна: 6 999 грн</span>
-                                        </span>
-                                    </p>
-                                    <input type="text" class="cart-added-list__item-count" placeholder="0" value="1" />
-                                    <button class="cart-added-list__item-btn-plus btn btn-light btn-xxs btn-icon"></button>
-                                    <button class="cart-added-list__item-btn-minus btn btn-light btn-xxs btn-icon"></button>
-                                </div>
-                                <div class="cart-added-list__item">
-                                    <button class="cart-added-list__item-btn-delete btn btn-light btn-xxs btn-icon">
-                                        <svg class="icon icon-close"><use href="#icon-close"></use></svg>
-                                    </button>
-                                    <img src="img/catalog/1.png" alt="" class="cart-added-list__item-img" />
-                                    <p class="cart-added-list__item-text-hold">
-                                        <a href="#" class="cart-added-list__item-title-link">Назва товару</a>
-                                        <span class="cart-added-list__item-meta-list">
-                                            <span class="cart-added-list__item-meta">Ціна: 6 999 грн</span>
-                                        </span>
-                                    </p>
-                                    <input type="text" class="cart-added-list__item-count" placeholder="0" value="1" />
-                                    <button class="cart-added-list__item-btn-plus btn btn-light btn-xxs btn-icon"></button>
-                                    <button class="cart-added-list__item-btn-minus btn btn-light btn-xxs btn-icon"></button>
-                                </div>
-                            </div>
 
-                            <p class="cart-added-list__summ">
-                                <span class="summ-label">Сума до оплати:</span>
-                                <span class="summ-number">(3) 50 800 грн</span>
-                            </p>
+                                <div class="form-group">
+                                    <label class="form-label" for="name"><span class="required-label">Кому відправляти?</span></label>
+                                    <input value="Yana" type="text" id="name" name="name" class="form-control" required placeholder="ПІБ" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="email">Email:</label>
+                                    <input value="kravchukyana05@gmail.com" type="email" id="email" name="email" class="form-control" placeholder="Для відправки даних про замовлення" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="phone"><span class="required-label">Телефон:</span></label>
+                                    <input value="2345678" type="tel" id="phone" name="phone" class="form-control" required placeholder="+38 (___) __ - __ - ___" />
+                                </div>
+
+                                <div class="form-group form-group--divider">
+                                    <h2>Доставка:</h2>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="town"><span class="required-label">Населений пункт:</span></label>
+                                    <input value="Rivne" type="text" id="town" name="town" class="form-control" required placeholder="В яке місто відправляємо замовлення?" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="post-office"><span class="required-label">Відділеня нової пошти:</span></label>
+                                    <input value="3" type="number" id="post-office" name="post-office" class="form-control" required placeholder="№" />
+                                </div>
+
+                                <div class="form-group form-group--divider">
+                                    <h2>Оплата:</h2>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="input-payment"><span class="required-label">Спосіб оплати:</span></label>
+                                    <select name="payment" class="form-control form-select" id="input-payment" required>
+                                        <option value="">Вибрати спосіб оплати</option>
+                                        <option value="1" selected>Оплайн оплата</option>
+                                        <option value="2">Наложений платіж</option>
+                                        <option value="3">Юридичним особам</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group form-action">
+                                    <button type="submit" class="btn w-fill">Оформити замовлення</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="content-cart">
+                            <div class="cart-added-list">
+                                <h2 class="cart-added-list__title">Корзина:</h2>
+
+                                <div class="cart-added-list__hold" id="js-cart-added-items">
+                                    <div class="cart-added-list__item">
+                                        <button class="cart-added-list__item-btn-delete btn btn-light btn-xxs btn-icon">
+                                            <svg class="icon icon-close"><use href="#icon-close"></use></svg>
+                                        </button>
+                                        <img src="img/catalog/1.png" alt="" class="cart-added-list__item-img" />
+                                        <p class="cart-added-list__item-text-hold">
+                                            <a href="#" class="cart-added-list__item-title-link">Назва товару</a>
+                                            <span class="cart-added-list__item-meta-list">
+                                                <span class="cart-added-list__item-meta">Ціна: 6 999 грн</span>
+                                            </span>
+                                        </p>
+                                        <input type="text" class="cart-added-list__item-count" placeholder="0" value="1" />
+                                        <button class="cart-added-list__item-btn-plus btn btn-light btn-xxs btn-icon"></button>
+                                        <button class="cart-added-list__item-btn-minus btn btn-light btn-xxs btn-icon"></button>
+                                    </div>
+                                    <div class="cart-added-list__item">
+                                        <button class="cart-added-list__item-btn-delete btn btn-light btn-xxs btn-icon">
+                                            <svg class="icon icon-close"><use href="#icon-close"></use></svg>
+                                        </button>
+                                        <img src="img/catalog/1.png" alt="" class="cart-added-list__item-img" />
+                                        <p class="cart-added-list__item-text-hold">
+                                            <a href="#" class="cart-added-list__item-title-link">Назва товару</a>
+                                            <span class="cart-added-list__item-meta-list">
+                                                <span class="cart-added-list__item-meta">Ціна: 6 999 грн</span>
+                                            </span>
+                                        </p>
+                                        <input type="text" class="cart-added-list__item-count" placeholder="0" value="1" />
+                                        <button class="cart-added-list__item-btn-plus btn btn-light btn-xxs btn-icon"></button>
+                                        <button class="cart-added-list__item-btn-minus btn btn-light btn-xxs btn-icon"></button>
+                                    </div>
+                                    <div class="cart-added-list__item">
+                                        <button class="cart-added-list__item-btn-delete btn btn-light btn-xxs btn-icon">
+                                            <svg class="icon icon-close"><use href="#icon-close"></use></svg>
+                                        </button>
+                                        <img src="img/catalog/1.png" alt="" class="cart-added-list__item-img" />
+                                        <p class="cart-added-list__item-text-hold">
+                                            <a href="#" class="cart-added-list__item-title-link">Назва товару</a>
+                                            <span class="cart-added-list__item-meta-list">
+                                                <span class="cart-added-list__item-meta">Ціна: 6 999 грн</span>
+                                            </span>
+                                        </p>
+                                        <input type="text" class="cart-added-list__item-count" placeholder="0" value="1" />
+                                        <button class="cart-added-list__item-btn-plus btn btn-light btn-xxs btn-icon"></button>
+                                        <button class="cart-added-list__item-btn-minus btn btn-light btn-xxs btn-icon"></button>
+                                    </div>
+                                </div>
+
+                                <p class="cart-added-list__summ">
+                                    <span class="summ-label">Сума до оплати:</span>
+                                    <span class="summ-number">(3) 50 800 грн</span>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Щоб приховати добавити .hidden, щоб показати забрати клас .hidden -->
-                <h2 class="title-square title-square--icon title-cart-success no-before">
+                <h2 class="title-square title-square--icon title-cart-success no-before hidden">
                     <a href="#" class="title-square__icon">
                         <svg class="icon icon-check-circle"><use href="#icon-check-circle"></use></svg>
                     </a>

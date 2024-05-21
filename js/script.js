@@ -5,10 +5,12 @@ import { minusCartProduct } from "./app/cart/minusCartProduct.js";
 import { plusCartProduct } from "./app/cart/plusCartProduct.js";
 import { viewProducts } from "./app/cart/viewProducts.js";
 import { searchProducts } from "./app/search.js";
+import { sendOrderForm } from "./app/sendOrderForm.js";
+import { showCartStatus } from "./app/showCartStatus.Js";
 import { viewCatalog } from "./app/viewCatalog.js";
 import { viewCategory } from "./app/viewCategory.js";
 import { viewHotOffer } from "./app/viewHotOffer.js";
-import { categoryListHtml, searchButton, catalogProductsHtml, deleteButtonHtml, bodyHtml, cartSumm, summNumber } from "./utils/elements.js";
+import { categoryListHtml, searchButton, catalogProductsHtml, deleteButtonHtml, bodyHtml, cartSumm, summNumber, formOrder } from "./utils/elements.js";
 import { viewCartSummOrder } from "./utils/utils.js";
 
 // Вивід товарів корзини
@@ -106,6 +108,12 @@ if (pageType !== undefined) {
         case "order":
             // Підрахунок замовлення
             viewCartSummOrder();
+
+            // Слідкуємо за відправкою форми
+            formOrder.onsubmit = sendOrderForm;
+
+            // Показати блоки відповідно до наповненості корзини
+            showCartStatus();
             break;
     }
 }

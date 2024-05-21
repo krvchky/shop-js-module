@@ -1,4 +1,5 @@
 import { viewCartSummOrder } from "../../utils/utils.js";
+import { showCartStatus } from "../showCartStatus.Js";
 import { cart } from "./cart.js";
 import { viewProducts } from "./viewProducts.js";
 
@@ -11,4 +12,7 @@ export const deleteCartProduct = function (id) {
 
     // Оновити корзину
     viewProducts(cart);
+
+    // Виклик функції на сторінці замовлення
+    showCartStatus();
 };

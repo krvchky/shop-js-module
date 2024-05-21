@@ -11,4 +11,7 @@ export const cartAddedItems = document.querySelector("#js-cart-added-items");
 export const bodyHtml = document.querySelector("body");
 export const summNumber = document.querySelector(".summ-number");
 export const changeCurrencyItems = document.querySelectorAll(".change-currency__item");
-console.log("changeCurrencyItems: ", changeCurrencyItems);
+export const formOrder = document.querySelector("#form-order");
+export const titlCartEmpty = document.querySelector(".title-cart-empty");
+export const holdOrderForm = document.querySelector(".js-hold-form-order");
+export const titleCartSuccess = document.querySelector(".title-cart-success");
