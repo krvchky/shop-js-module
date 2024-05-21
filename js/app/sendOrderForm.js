@@ -31,6 +31,17 @@ async function setOrderEmail(formData) {
 
     // Наповнюємо лист товарами
     formDataObject["cartItems"] = setCartText(cart);
+
+    // Заміняємо спосіб оплати на текстовий
+    switch (formDataObject["payment"]) {
+        case "1":
+            formDataObject["payment"] = "Оплайн оплата";
+            break;
+
+        default:
+            formDataObject["payment"] = "Невідомий";
+            break;
+    }
     console.log("formDataObject: ", formDataObject);
 
     const newHtmlEmail = replaceTemplatePlaceholders(htmlEmail, formDataObject);

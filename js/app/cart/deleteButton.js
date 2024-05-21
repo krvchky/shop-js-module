@@ -1,5 +1,4 @@
-import { viewCartSummOrder } from "../../utils/utils.js";
-import { showCartStatus } from "../showCartStatus.Js";
+import { showCartStatus } from "../showCartStatus.js";
 import { cart } from "./cart.js";
 import { viewProducts } from "./viewProducts.js";
 
