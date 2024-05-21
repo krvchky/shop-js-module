@@ -6,7 +6,7 @@ import { plusCartProduct } from "./app/cart/plusCartProduct.js";
 import { viewProducts } from "./app/cart/viewProducts.js";
 import { searchProducts } from "./app/search.js";
 import { sendOrderForm } from "./app/sendOrderForm.js";
-import { showCartStatus } from "./app/showCartStatus.Js";
+import { showCartStatus } from "./app/showCartStatus.js";
 import { viewCatalog } from "./app/viewCatalog.js";
 import { viewCategory } from "./app/viewCategory.js";
 import { viewHotOffer } from "./app/viewHotOffer.js";
