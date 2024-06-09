@@ -72,22 +72,6 @@ if (deleteButtonHtml) {
     };
 }
 
-// Приклад об'єкта кошика замовлень
-// var cart = {
-//     orders: [
-//         { id: 1, product: "Product A", price: 10 },
-//         { id: 2, product: "Product B", price: 20 },
-//         { id: 3, product: "Product C", price: 30 },
-//     ],
-// };
-
-// // Обчислення загальної суми замовлень у кошику
-// var total = cart.orders.reduce(function (sum, order) {
-//     return sum + order.price;
-// }, 0);
-
-// console.log("Загальна сума замовлень у кошику:", total);
-
 // Відносно розділу викликаєио якусь функцію
 const pageType = bodyHtml.dataset.type;
 
